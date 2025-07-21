@@ -4,6 +4,7 @@ import router from './routes';
 import notFound from './middlewares/not-found';
 import globalErrorHandler from './middlewares/global-error-handler';
 import status from 'http-status';
+import { TEvent } from './types';
 const app: Application = express();
 
 // middlewares
@@ -17,6 +18,9 @@ app.use(
     }),
 );
 app.use(express.json());
+
+//memory storage
+export const events: TEvent[] = [];
 
 //routes
 app.use('/', router);
