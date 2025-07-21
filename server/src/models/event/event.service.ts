@@ -6,6 +6,7 @@ import status from 'http-status';
 import apiError from '../../middlewares/api-error';
 import validateInput from '../../utils/input-validation';
 import { Response } from 'express';
+import { categorizeEvent } from '../../utils/categorize-event';
 
 // create event service
 const createEventIntoDB = (payload: TEvent, res: Response) => {
@@ -22,7 +23,7 @@ const createEventIntoDB = (payload: TEvent, res: Response) => {
             .status(status.BAD_REQUEST)
             .json({ errors: validatedEvent.errors });
     }
-    const category = "Other";
+    const category = categorizeEvent(title, notes);
     const newEvent: TEvent = {
         id: uuidv4(),
         title,

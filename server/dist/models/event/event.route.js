@@ -4,5 +4,8 @@ exports.EventRoutes = void 0;
 const express_1 = require("express");
 const event_controller_1 = require("./event.controller");
 const router = (0, express_1.Router)();
+router.post('/', event_controller_1.EventControllers.createEvent);
 router.get('/', event_controller_1.EventControllers.getEvent);
+router.put('/:id', event_controller_1.EventControllers.updateEvent);
+router.delete('/:id', event_controller_1.EventControllers.deleteEvent);
 exports.EventRoutes = router;
