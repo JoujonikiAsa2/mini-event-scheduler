@@ -1,6 +1,10 @@
 # Event Manager
 
 A full-stack web application for managing events, built with React, TypeScript, Tailwind CSS, Node.js, and Express.
+<br/>
+Client Live Link: https://mini-event-scheduler-nu.vercel.app
+<br/>
+server Live Link: https://mini-event-scheduler-server-ten.vercel.app
 
 ## Features
 
@@ -22,7 +26,7 @@ The project is organized into two main parts:
 
 1. Navigate to the backend directory:
    ```
-   cd backend
+   cd server
    ```
 
 2. Install dependencies:
@@ -35,23 +39,18 @@ The project is organized into two main parts:
    npm run build
    ```
 
-4. Start the server:
-   ```
-   npm start
-   ```
-
 For development with auto-restart:
 ```
 npm run dev
 ```
 
-The backend server will run on port 3001.
+The backend server will run on port 5000.
 
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
    ```
-   cd frontend
+   cd client
    ```
 
 2. Install dependencies:
@@ -61,10 +60,21 @@ The backend server will run on port 3001.
 
 3. Start the development server:
    ```
-   npm start
+   npm run dev
    ```
 
-The frontend development server will run on port 3000.
+The frontend development server will run on port 5173.
+
+## Environment Variable Setup
+**Client**
+<br/>
+VITE_BASE_URL=https://mini-event-scheduler-server-ten.vercel.app
+<br/>
+**Server**
+<br/>
+NODE_ENV=development
+<br/>
+PORT=5000
 
 ## API Endpoints
 
