@@ -35,7 +35,7 @@ const createEventIntoDB = (payload: TEvent, res: Response) => {
     };
 
     events.push(newEvent);
-    return events;
+    return newEvent;
 };
 
 // get event service
