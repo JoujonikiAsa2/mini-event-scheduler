@@ -19,4 +19,12 @@ export default defineConfig([
       'no-unused-vars': 'warn',
     },
   },
+  {overrides: [
+    {
+      files: ['jest.config.js'],
+      env: {
+        node: true
+      }
+    }
+  ]}
 ]);
