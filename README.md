@@ -62,6 +62,10 @@ The backend server will run on port 5000.
    ```
    npm run dev
    ```
+4. Test the automatic categorize code:
+   ```
+   npm run test
+   ```
 
 The frontend development server will run on port 5173.
 
