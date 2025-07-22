@@ -37,7 +37,7 @@ const createEventIntoDB = (payload, res) => {
         archived,
     };
     app_1.events.push(newEvent);
-    return app_1.events;
+    return newEvent;
 };
 // get event service
 const getEventFromDB = (query) => {
