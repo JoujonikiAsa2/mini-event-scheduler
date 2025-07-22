@@ -38,6 +38,11 @@ The project is organized into two main parts:
    ```
    npm run build
    ```
+   
+4. Test the automatic categorize code:
+   ```
+   npm run test
+   ```
 
 For development with auto-restart:
 ```
@@ -61,10 +66,6 @@ The backend server will run on port 5000.
 3. Start the development server:
    ```
    npm run dev
-   ```
-4. Test the automatic categorize code:
-   ```
-   npm run test
    ```
 
 The frontend development server will run on port 5173.
